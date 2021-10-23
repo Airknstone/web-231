@@ -1,22 +1,25 @@
-/* Title: <file name>
-Author: <original author(s)>
-Date: <today’s date in the following format: DD MM YYYY>
-Modified By: <if you are not the originating author, your name would go here>
-Description: <one or two sentences describing the programs functionality>
+/* Title: index.html
+Author: Allan Trejo
+Date: 22 10 2021
+Description: Css file for publishing github landing page. Assignment 1.3
+Linked to index.html in root directory
 
-font-family: 'Oswald', Verdana, Arial, sans-serif;
  */
 
+/* Font Family
+font-family: 'Oswald', Verdana, Arial, sans-serif; */
 body {
   font-family: 'Oswald', Verdana, Arial, sans-serif;
 }
 
+/* Adds Main Container Margins*/
 #container {
   margin-top: 50px;
   margin-left: 100px;
   margin-right: 100px;
 }
 
+/*AddsDesign Style to Header Tags */
 h1,
 h2,
 h3,
@@ -27,6 +30,9 @@ h4 {
   padding: 10px;
 }
 
+/*******************************
+* Style Anchor Tags 
+*/
 a {
   color: #453674;
   text-decoration: none;
@@ -40,3 +46,7 @@ a:hover {
 a:visited {
   color: #3c275a;
 }
+
+/*******************************
+*End Style Anchor Tags 
+*/
