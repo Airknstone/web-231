@@ -2,7 +2,7 @@
 Author: Professor Krasso
 Date: 26 10 2021
 Modified By: Allan Trejo
-Description: root file for publishing github landing page. Assignment 1.3
+Description: Adds Javascript to HTML elements.
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -15,13 +15,18 @@ Description: root file for publishing github landing page. Assignment 1.3
   </head>
   <body>
     <h1>Exercise 2.2 - Hello Javascript</h1>
+
     <button id="btnMyCourse">What course am I taking?</button>
     <p id="txtMyWorld"></p>
     <a class="return-home" href="../index.html">Return</a>
-    <script>
+
+    <!-- Javascript Script Tag -->
+    <script type="application/javascript">
+      // Grabs Element with txtMyWorld ID and modifies HTML
       document.getElementById('txtMyWorld').innerHTML =
         "You are now in Trejo's world!";
 
+      // Alert Function on btnMyCourse click
       document.getElementById('btnMyCourse').onclick = function () {
         window.alert('WEB 231 – Enterprise JavaScript I.');
       };
