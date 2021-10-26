@@ -1,0 +1,30 @@
+<!-- Title: index.html
+Author: Professor Krasso
+Date: 26 10 2021
+Modified By: Allan Trejo
+Description: root file for publishing github landing page. Assignment 1.3
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>WEB 231 – Enterprise JavaScript I</title>
+  </head>
+  <body>
+    <h1>Exercise 2.2 - Hello Javascript</h1>
+    <button id="btnMyCourse">What course am I taking?</button>
+    <p id="txtMyWorld"></p>
+    <a class="return-home" href="../index.html">Return</a>
+    <script>
+      document.getElementById('txtMyWorld').innerHTML =
+        "You are now in Trejo's world!";
+
+      document.getElementById('btnMyCourse').onclick = function () {
+        window.alert('WEB 231 – Enterprise JavaScript I.');
+      };
+    </script>
+  </body>
+</html>
