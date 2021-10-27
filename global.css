@@ -3,15 +3,7 @@ body {
   margin: 0;
   font-family: 'Oswald', Verdana, Arial, sans-serif;
 }
-header {
-  background-color: #3c275a;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-header h1 {
-  font-weight: 400;
-}
+
 #navbar {
   overflow: hidden;
   background-color: #4f3674;

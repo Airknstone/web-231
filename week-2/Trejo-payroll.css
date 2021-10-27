@@ -1,0 +1,12 @@
+/* Title: Trejo-payroll.css
+Author: Professor Krasso
+Date: 22 10 2021
+Modified By: Allan Trejo
+Description: Updates styles necessary for proper layout for Trejo_payroll.html */
+
+ul {
+  border: 1px dotted red;
+}
+.app-header {
+  text-align: center;
+}

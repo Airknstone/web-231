@@ -1,0 +1,154 @@
+<!-- Title: Trejo-payroll.html
+Author: Professor Krasso
+Date: 22 10 2021
+Modified By: Allan Trejo
+Description: Using Javascript to set Text into HTML Elements
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link to CSS Files -->
+    <link rel="stylesheet" href="Trejo-payroll.css" />
+    <link rel="stylesheet" href="../site.css" />
+    <link rel="stylesheet" href="../global.css" />
+
+    <!-- Link to Google Fonts; Oswald 300 400 500 700 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>WEB 231 – Enterprise JavaScript I</title>
+  </head>
+  <body>
+    <div id="container">
+      <!-- Header -->
+      <h1 class="app-header" id="payroll-header">Payroll System</h1>
+      <!-- End Header -->
+
+      <!-- Begin Employee Records -->
+      <h3>Employee record 1</h3>
+      <ul>
+        <li id="txtFirstNameJohn"></li>
+        <li id="txtLastNameSnow"></li>
+        <li id="txtAddressJohnSnow"></li>
+        <li id="txtHireDateJohnSnow"></li>
+        <li id="txtPayRateJohnSnow"></li>
+      </ul>
+
+      <h3>Employee record 2</h3>
+      <ul>
+        <li id="txtFirstNameAlbus"></li>
+        <li id="txtLastNameDumbledor"></li>
+        <li id="txtAddressAblusDumbledor"></li>
+        <li id="txtHireDateAblusDumbledor"></li>
+        <li id="txtPayRateAblusDumbledor"></li>
+      </ul>
+      <h3>Employee record 3</h3>
+      <ul>
+        <li id="txtFirstNameRick"></li>
+        <li id="txtLastNameDeckard"></li>
+        <li id="txtAddressRickDeckard"></li>
+        <li id="txtHireDateRickDeckard"></li>
+        <li id="txtPayRateRickDeckard"></li>
+      </ul>
+
+      <!-- End Employee Records -->
+
+      <!-- Return to Home Page -->
+      <a href="../index.html">Return</a>
+    </div>
+
+    <!-- Bind Javascript to Modify HTML and insert Information -->
+    <script type="application/javascript">
+      /*
+       *
+       * Begin  Employee Number one John Snow Information
+       *
+       *
+       ****************************************************/
+
+      const fistName_John = 'John',
+        lasName_Snow = 'Snow',
+        address_JohnSnow = 'The North',
+        hireDate_JohnSnow = new Date().toLocaleDateString('en-US'),
+        payRate_JohnSnow = (100.5234).toFixed(1);
+
+      document.getElementById('txtFirstNameJohn').innerHTML = fistName_John;
+      document.getElementById('txtLastNameSnow').innerHTML = lasName_Snow;
+      document.getElementById('txtAddressJohnSnow').innerHTML =
+        address_JohnSnow;
+      document.getElementById('txtHireDateJohnSnow').innerHTML =
+        hireDate_JohnSnow;
+      document.getElementById('txtPayRateJohnSnow').innerHTML =
+        payRate_JohnSnow;
+
+      /*
+       *
+       * END  Employee Number one John Snow Information
+       *
+       *
+       ****************************************************/
+
+      /****************************************************
+       *
+       * BEGIN  Employee Number two Albus Dumbledor Information
+       *
+       *
+       *********/
+      const fistName_Albus = 'Albus',
+        lasName_Dumbledor = 'Dumbledor',
+        address_AlbusDumbledor = 'Hogwarts',
+        hireDate_AlbusDumbledor = new Date().toLocaleDateString('en-US'),
+        payRate_AlbusDumbledor = (89.99993224).toFixed(1);
+
+      document.getElementById('txtFirstNameAlbus').innerHTML = fistName_Albus;
+      document.getElementById('txtLastNameDumbledor').innerHTML =
+        lasName_Dumbledor;
+      document.getElementById('txtAddressAblusDumbledor').innerHTML =
+        address_AlbusDumbledor;
+      document.getElementById('txtHireDateAblusDumbledor').innerHTML =
+        hireDate_AlbusDumbledor;
+      document.getElementById('txtPayRateAblusDumbledor').innerHTML =
+        payRate_AlbusDumbledor;
+
+      /*
+       *
+       * END  Employee Number two Albus Dumbledor Information
+       *
+       *
+       ****************************************************/
+
+      /****************************************************
+       *
+       * BEGIN Employee Number 3 Rick Deckard Information
+       *
+       */
+
+      const fistName_Rick = 'Rick',
+        lasName_Deckard = 'Deckard',
+        address_RickDeckard = 'Los Angeles',
+        hireDate_RickDeckard = new Date().toLocaleDateString('en-US'),
+        payRate_RickDeckard = (7564.2342).toFixed(1);
+
+      document.getElementById('txtFirstNameRick').innerHTML = fistName_Rick;
+      document.getElementById('txtLastNameDeckard').innerHTML = lasName_Deckard;
+      document.getElementById('txtAddressRickDeckard').innerHTML =
+        address_RickDeckard;
+      document.getElementById('txtHireDateRickDeckard').innerHTML =
+        hireDate_RickDeckard;
+      document.getElementById('txtPayRateRickDeckard').innerHTML =
+        payRate_RickDeckard;
+
+      /*
+       *
+       * END  Employee Number 3 Rick Deckard Information
+       *
+       ****************************************************/
+    </script>
+  </body>
+</html>
