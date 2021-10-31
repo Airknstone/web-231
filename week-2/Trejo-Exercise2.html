@@ -28,9 +28,11 @@ Description: Adds Javascript to HTML elements.
         "You are now in Trejo's world!";
 
       // Alert Function on btnMyCourse click
-      document.getElementById('btnMyCourse').onclick = function () {
-        window.alert('WEB 231 – Enterprise JavaScript I.');
-      };
+      document
+        .getElementById('btnMyCourse')
+        .addEventListener('click', function () {
+          window.alert('WEB 231 – Enterprise JavaScript I.');
+        });
     </script>
   </body>
 </html>
