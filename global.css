@@ -1,40 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
-body {
-  margin: 0;
-  font-family: 'Oswald', Verdana, Arial, sans-serif;
-}
-header {
-  background-color: #3c275a;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-h1 {
-  font-weight: 400;
-}
-
-#navbar {
-  overflow: hidden;
-  background-color: #4f3674;
-  border-bottom: 15px solid #d6a800;
-}
-#navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-#navbar a:hover {
-  background-color: #d6a800;
-  color: #4f3674;
-}
-#container {
-  margin: 2% 5% 100px 5%;
-  padding: 10px;
-}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
@@ -51,28 +14,7 @@ h1 {
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-footer {
-  background-color: #4f3674;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-footer p {
-  color: white;
-  font-weight: 400;
-  float: right;
-  padding-right: 10px;
-  font-style: italic;
-  font-size: 0.75em;
-}
-footer p a {
-  text-decoration: none;
-  color: white;
-}
-footer p a:hover {
-  text-decoration: underline;
-}
+
 .form {
   display: inline-grid;
   grid-template-columns: auto;
@@ -109,29 +51,6 @@ footer p a:hover {
 }
 .full-width {
   width: 100%;
-}
-#books {
-  border-collapse: collapse;
-  width: 100%;
-  margin-bottom: 30px;
-}
-#books th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #4f3674;
-  color: white;
-}
-#books th,
-td {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#books tr:hover {
-  background-color: #d6a800;
-  color: #4f3674;
-  cursor: pointer;
 }
 
 /* Retun Home Anchor Styling */
