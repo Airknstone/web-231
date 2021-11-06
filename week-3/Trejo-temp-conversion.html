@@ -24,6 +24,8 @@ Description: Temperature conversion App .
   <body>
     <div id="container">
       <h1 class="app-header">Welcome to the Temperature Conversion App!</h1>
+
+      <!-- Form Container -->
       <div id="form">
         <div class="card">
           <div class="card-title">Fahrenheit to Celsius Converter</div>
@@ -47,6 +49,10 @@ Description: Temperature conversion App .
           </div>
         </div>
       </div>
+
+      <!-- End Form Container -->
+
+      <!-- Begin Form Results Container -->
       <div id="form-results">
         <div class="card">
           <div class="card-title">Conversion Results</div>
@@ -55,8 +61,12 @@ Description: Temperature conversion App .
         <a class="return-home" href="../index.html">Return</a>
       </div>
     </div>
+    <!-- End Form Results Container -->
 
     <script>
+      // Grabs Input Field Value and Tests for NaN and Empty Fields
+      // Alerts user is unput is not acceptable
+      // Then sets inner html with conversion results
       document.getElementById('btnSubmit').onclick = function () {
         let fahrenheit = document.getElementById('txtFahrenheit');
         if (isNaN(fahrenheit.value) || fahrenheit.value.trim() === '') {
