@@ -1,0 +1,29 @@
+/* Title: Trejo-temp-conversion.css
+Author: Professor Krasso
+Date: 5 11 2021
+Modified By: Allan Trejo
+Description: Css Styling for Temp Conversion html.
+ */
+
+body {
+  font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+#container {
+  padding: 10px;
+}
+#form {
+  width: 600px;
+  margin: 3% auto 0;
+}
+#form-results {
+  width: 600px;
+  margin: 3% auto 0;
+}
+#conversion-results {
+  font-size: 28px;
+  text-align: center;
+}
+.app-header {
+  font-size: 28px;
+  text-align: center;
+}
