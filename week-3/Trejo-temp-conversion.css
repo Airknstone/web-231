@@ -8,6 +8,10 @@ Description: Css Styling for Temp Conversion html.
 body {
   font-family: 'Oswald', Verdana, Arial, sans-serif;
 }
+.app-header {
+  font-size: 28px;
+  text-align: center;
+}
 #container {
   padding: 10px;
 }
@@ -20,10 +24,6 @@ body {
   margin: 3% auto 0;
 }
 #conversion-results {
-  font-size: 28px;
-  text-align: center;
-}
-.app-header {
   font-size: 28px;
   text-align: center;
 }

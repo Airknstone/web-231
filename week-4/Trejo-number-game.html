@@ -11,7 +11,7 @@ Description: Temperature conversion App .
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Link to CSS Files -->
-    <link rel="stylesheet" href="./Trejo-temp-conversion.css" />
+    <link rel="stylesheet" href="./Trejo-number-game.css" />
     <link rel="stylesheet" href="../global.css" />
 
     <!-- Link to Google Fonts; Oswald 300 400 500 700 -->
@@ -22,7 +22,27 @@ Description: Temperature conversion App .
     <title>WEB 231 – Enterprise JavaScript I</title>
   </head>
   <body>
-    <div id="container"></div>
+    <div id="container">
+      <h1 class="app-header">Welcome to the numbers game!</h1>
+      <div id="form">
+        <div class="card">
+          <div class="card-title">Pick a number between 1 and 10</div>
+          <div class="card-content">
+            <div class="form">
+              <div class="form-field">
+                <label for="txtMyNumber">Guess the number</label>
+                <input type="text" id="txtMyNumber" />
+              </div>
+              <div class="form-results">
+                <button id="btnSubmit" class="btn btn-primary full-width">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script></script>
   </body>

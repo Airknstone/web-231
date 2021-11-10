@@ -1,0 +1,24 @@
+/* Title: Trejo-number-game.css
+Author: Professor Krasso
+Date: 5 11 2021
+Modified By: Allan Trejo
+Description: Css Styling for number game html.
+ */
+body {
+  font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+.app-header {
+  font-size: 28px;
+  text-align: center;
+}
+#container {
+  padding: 10px;
+}
+#form {
+  width: 600px;
+  margin: 3% auto 0;
+}
+#form-results {
+  width: 600px;
+  margin: 3% auto 0;
+}
