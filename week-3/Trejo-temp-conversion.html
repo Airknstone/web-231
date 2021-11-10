@@ -70,7 +70,8 @@ Description: Temperature conversion App .
       document.getElementById('btnSubmit').onclick = function () {
         let fahrenheit = document.getElementById('txtFahrenheit');
         if (isNaN(fahrenheit.value) || fahrenheit.value.trim() === '') {
-          alert('Please Enter a Number');
+          document.getElementById('conversion-results').innerHTML =
+            'Please Enter a Number';
           fahrenheit.value = '';
           document.getElementById('conversion-results').innerHTML = '';
         } else {
