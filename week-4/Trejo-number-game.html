@@ -56,7 +56,11 @@ Description: Number Guessing App .
       </div>
     </div>
     <script>
+      //Generate Random number on page load to serve as Number to Guess
       const rnd = Math.floor(Math.random() * 10 + 1);
+
+      // Onclick function on button, expected output is high low or Congratulations
+      //depending on user input
       document.getElementById('btnSubmit').onclick = function () {
         let myNumber = document.getElementById('txtMyNumber');
         if (isNaN(myNumber.value) || myNumber.value.trim() === '') {
