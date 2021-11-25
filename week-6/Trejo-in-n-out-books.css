@@ -1,0 +1,31 @@
+/* Title: Trejo-in-n-out-book.css
+Author: Professor Krasso
+Date: 24 11 2021
+Modified By: Allan Trejo
+Description: Css Styling for the Trejo-in-n-out-book html.
+ */
+body {
+  font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+.app-header {
+  font-size: 28px;
+  text-align: center;
+}
+#container {
+  padding: 10px;
+}
+#form {
+  width: 600px;
+  margin: 3% auto 0;
+}
+#form-results {
+  width: 600px;
+  margin: 3% auto 0;
+}
+#sequence-results {
+  font-size: 28px;
+  text-align: center;
+}
+.drop-down-menu {
+  padding: 0.5rem;
+}
