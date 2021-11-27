@@ -55,10 +55,10 @@ Description: This App Displays book information stored in Javascript Objects.
       <!-- Begin Form Results Container -->
       <div id="form-results">
         <div id="favorite-books" class="card">
-          <!-- Places innerhtml in here -->
+          <!--  book innerhtml in here -->
         </div>
         <div id="favorite-authors" class="card"></div>
-
+        <!--  author innerhtml in here -->
         <a class="return-home" href="../index.html">Return</a>
       </div>
       <!-- End Form Results Container -->
@@ -81,14 +81,15 @@ Description: This App Displays book information stored in Javascript Objects.
       const author2 = { name: 'Leo Tolstoy', genre: 'Fiction' };
       const author3 = { name: 'Orson Scott Card', genre: 'Adventure' };
 
-      //Grabs Location to set innerHTML
+      //Grabs element by id to set innerHTML
       let books = document.getElementById('favorite-books');
       let authors = document.getElementById('favorite-authors');
       //Initial State to display none
       books.style.display = 'none';
       authors.style.display = 'none';
 
-      //Onclick If else function that displays html table according to
+      //BIND Onclick
+      // If else function that displays html table according to
       // Dropdown selection.
       document.getElementById('btnDisplayListing').onclick = function () {
         let choice = document.getElementById('favoriteList').value;
