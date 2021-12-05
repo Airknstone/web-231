@@ -67,6 +67,7 @@ Refrences: https://www.w3schools.com/js/js_classes.asp
     </div>
     <!-- End Container -->
     <script>
+      //Class Definitions
       class Product {
         constructor(id, description, price, quantity) {
           (this.id = id),
@@ -92,7 +93,7 @@ Refrences: https://www.w3schools.com/js/js_classes.asp
             (this.salary = salary.toFixed(2));
         }
       }
-      //   Product list
+      //   Initialize Products
       let product1 = new Product(
         4312341,
         'HTML and CSS: Design and Build Websites',
@@ -124,19 +125,24 @@ Refrences: https://www.w3schools.com/js/js_classes.asp
         8
       );
 
-      //Services List
+      //Initialize Services
       let service1 = new Services(100, 'Website Design', 150.0, 25);
       let service2 = new Services(101, 'DevOps Consulting', 125, 50);
       let service3 = new Services(102, 'Database Design', 125, 15);
 
-      //Employees List
+      //Initialize Employees
       let employee1 = new Employee(1007, 'Beethoven', 'Ludwig', 13.99);
       let employee2 = new Employee(1008, 'Bach', 'Johann', 22.3);
       let employee3 = new Employee(1009, 'Mozart', 'Wolfgang', 19.5);
       let employee4 = new Employee(1010, 'Brahms', 'Johannes', 12.0);
       let employee5 = new Employee(1011, 'Haydn', 'Joseph', 32.5);
 
+      //Bind results HTML
       let results = document.getElementById('display-results');
+
+      //START onclick function
+      //Expect the correct HTML table to display according to
+      //value selected from dropdown
       document.getElementById('btnDisplayListing').onclick = function () {
         let choice = document.getElementById('listing').value;
         console.log(choice);
