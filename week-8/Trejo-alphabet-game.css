@@ -1,0 +1,34 @@
+/* Title: Trejo-alphabet-game.css
+Author: Professor Krasso
+Date: 08 12 2021
+Modified By: Allan Trejo
+Description: Css Styling for the Trejo-javazon html.
+ */
+body {
+  font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+.app-header {
+  font-size: 28px;
+  text-align: center;
+}
+#container {
+  padding: 10px;
+}
+#form {
+  width: 600px;
+  margin: 3% auto 0;
+}
+#form-results {
+  width: 600px;
+  margin: 3% auto 0;
+}
+#alphabet-output {
+  text-align: center;
+  font-size: 28px;
+  margin: 0.5px;
+}
+#results-output {
+  text-align: center;
+  font-size: 28px;
+  margin: 0.5px;
+}
