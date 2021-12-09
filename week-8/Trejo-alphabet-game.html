@@ -85,7 +85,7 @@ Refrences: https://www.w3schools.com/js/js_classes.asp
       document.getElementById('btnFindLetter').onclick = function () {
         let pos = document.getElementById('txtPosition').value;
         console.log(pos);
-        let letter = alphabet[+pos - 1];
+        let letter = alphabet[pos - 1];
         console.log(letter);
         if (letter == undefined) {
           document.getElementById('results-output').innerHTML =
