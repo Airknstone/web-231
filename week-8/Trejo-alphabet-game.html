@@ -2,9 +2,8 @@
 Author: Professor Krasso
 Date: 08 12 2021
 Modified By: Allan Trejo
-Description: This App Displays products from objects created with classes.
-Refrences: https://www.w3schools.com/js/js_classes.asp
-           https://www.w3schools.com/js/js_switch.asp
+Description: This App takes in a number input from user and searches array for the index of the alphabet.
+
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -61,7 +60,7 @@ Refrences: https://www.w3schools.com/js/js_classes.asp
           <!-- End alphabetOutput Card -->
         </div>
       </div>
-      <br />
+
       <!-- Begin Form Results Container -->
       <div id="form-results">
         <div class="card">
@@ -74,19 +73,25 @@ Refrences: https://www.w3schools.com/js/js_classes.asp
 
     <!-- End Container -->
     <script>
+      //Global variables
       const alphabet = [...'ABCDEFGJIJKLMNOPQRSTUVWXYZ'];
       let alphabetOutput = '';
+
+      //Initialize alphabetOutput expected output:
+      //String
+      //A, B, C, D, E, F, G, J, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
       for (char in alphabet) {
         alphabetOutput += alphabet[char] + ', ';
       }
       document.getElementById('alphabet-output').innerHTML =
         alphabetOutput.slice(0, -2);
 
+      //Onclick Searches array by index number and displays corresponding alphabet letter
+      // expected Output
+      // Input: 2, B is at position 2 in the alphabet.
       document.getElementById('btnFindLetter').onclick = function () {
         let pos = document.getElementById('txtPosition').value;
-        console.log(pos);
         let letter = alphabet[pos - 1];
-        console.log(letter);
         if (letter == undefined) {
           document.getElementById('results-output').innerHTML =
             'There are not ' + pos + ' letters in the alphabet';
