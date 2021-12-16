@@ -1,0 +1,43 @@
+/* Title: Trejo-card-game.css
+Author: Professor Krasso
+Date: 08 12 2021
+Modified By: Allan Trejo
+Description: Css Styling for the Trejo-card-game html.
+ */
+body {
+  font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+.app-header {
+  font-size: 28px;
+  text-align: center;
+}
+#container {
+  padding: 10px;
+}
+#form {
+  width: 600px;
+  margin: 3% auto 0;
+}
+#form-results {
+  width: 600px;
+  margin: 3% auto 0;
+}
+#alphabet-output {
+  text-align: center;
+  font-size: 28px;
+  margin: 0.5px;
+}
+#results-output {
+  text-align: center;
+  font-size: 28px;
+  margin: 0.5px;
+}
+#player-card-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.player-card {
+  text-align: center !important ;
+}
